@@ -1,9 +1,9 @@
-
+import styles from './Header.module.css'
 
 function Header() {
 
   return (
-    <header>
+    <header className={styles.headerContainer}>
         <p>meu cabeçalho aqui</p>
     </header>
   )
