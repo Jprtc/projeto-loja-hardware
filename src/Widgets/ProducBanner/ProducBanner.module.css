@@ -1,0 +1,24 @@
+div{
+  border:2px solid black;
+  width:230px;
+  height:366px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:auto;
+  border-radius:15px;
+}
+img{
+  align-self:center;
+  padding:auto; 
+  padding-top:20px;
+  padding-bottom:20px;
+  width:162px;
+  height:162px;
+      &:hover{
+        cursor:pointer;
+        /* a imagem precisa crescer problem q 
+         * tem q ser c o mause no card e n na imagem em especifico*/
+
+      }
+}
