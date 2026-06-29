@@ -1,24 +1,103 @@
-div{
+.container{
   border:2px solid black;
-  width:230px;
-  height:366px;
+  width:260px;
+  height:396px;
   display:flex;
   flex-direction:column;
   align-items:flex-start;
   padding:auto;
   border-radius:15px;
+  overflow:hidden;
+
+    &:hover{
+      cursor:pointer;
+    }
+
 }
-img{
-  align-self:center;
-  padding:auto; 
-  padding-top:20px;
-  padding-bottom:20px;
+
+.icones{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  margin-top:5px;
+  
+
+}
+.rate{
+  margin-right:100px;
+  margin-left:5px;
+}
+
+.heart , .carrinho {
+  border:0px;
+  background-color:white;
+  transition:transform 2s ease;
+
+   &:hover{
+     cursor:pointer;
+   }
+}
+
+.pop{
+  animation: pop 1s ease;
+}
+
+@keyframes pop{
+  0% {
+    transform:scale(0);
+  }
+  100%{
+    transform:scale(1);
+  }
+}
+
+.imagem{
   width:162px;
   height:162px;
-      &:hover{
-        cursor:pointer;
-        /* a imagem precisa crescer problem q 
-         * tem q ser c o mause no card e n na imagem em especifico*/
+  overflow:hidden;
+  align-self:center!important;
+  padding-top:30px;
+  padding-bottom:35px;
+  
+}
 
-      }
+.imagem .imagemPrincipal{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform 0.3s ease;
+}
+
+.container:hover .imagem .imagemPrincipal{
+  transform:scale(1.2);
+  
+}
+
+.nome{
+    
+    font-size:18px;
+    color:black;
+    padding-left:5px;
+    padding-right:5px;
+}
+.preco{
+    font-size:15px;
+    color:#96a0a4;
+    text-decoration:line-through;
+    padding-left:5px;
+    padding-right:5px;
+
+}
+.precoComDesconto{
+  font-size:20px;
+  font-weight:bold;
+  font-weight:700;
+  padding-left:5px;
+  padding-right:5px;
+}
+.formaDePagamento{
+  font-size:15px;
+  padding-left:5px;
+  padding-right:5px;
 }
