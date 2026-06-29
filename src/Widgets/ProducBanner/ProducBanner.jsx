@@ -57,9 +57,9 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto}){
 
       <p className={styles.preco}>R$ {precoAntigo}</p>
 
-      <p className={styles.precoComDesconto}>R$ {precoAtual} -{desconto}</p>
+      <p className={styles.precoComDesconto}>R$ {precoAtual} <span className={styles.verdinho}>-{desconto}%</span></p>
 
-      <p className={styles.formaDePagamento}>No Pix ou 10x de R$ {precoAtual / 10}</p>  
+      <p className={styles.formaDePagamento}>No Pix ou 10x de R$ {(precoAtual / 10).toFixed(2)}</p>  
 
     </div>
   

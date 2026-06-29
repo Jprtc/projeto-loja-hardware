@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import styles from "./ProducBannerCarrosel.module.css";
 import ProducCard from "../ProducBanner/ProducBanner.jsx";
+import foguinho from "../../assets/foguinho.svg";
 
 function ProducCarrosel({ produtos }) {
   const carouselRef = useRef(null);
@@ -35,7 +36,16 @@ function ProducCarrosel({ produtos }) {
   }, [produtos.length]);
 
   return (
+    
     <div className={styles.container}>
+
+      <div className={styles.cabeca}>
+
+      <img className={styles.fogo} src={foguinho} width={30} height={30} />
+      <h2 className={styles.titulo}>Esquenta julho gamer</h2>
+
+      </div>
+
       <button 
         className={styles.leftButton} 
         onClick={scrollLeft}

@@ -59,3 +59,23 @@
 
 .leftButton { left: 5px; }
 .rightButton { right: 5px; }
+
+.cabeca{
+  display:flex;
+  
+}
+.fogo{
+  display:flex;
+  align-self:center;
+  padding-left:10px;
+  padding-right:20px;
+}
+.titulo{
+  display:flex;
+  align-self:center;
+  padding-top:2px;
+  font-size:36px;
+  color:black!important;
+  font-weight:bold;
+  font-weight:700;
+}
