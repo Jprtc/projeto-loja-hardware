@@ -1,6 +1,7 @@
 body{
   display:flex;
-  flex-direction:center;
-  align-items:center;
   justify-content:center;
+  padding-top:100px;
+  
+  background-color:#f2f3f4;
 }
