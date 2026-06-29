@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.carrosel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.carrosel::-webkit-scrollbar {
+  display: none;
+}
+
+.leftButton,
+.rightButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+
+  cursor: pointer;
+  z-index: 10;
+}
+
+.leftButton { left: -20px; }
+.rightButton { right: -20px; }
