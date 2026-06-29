@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import ProducBanner from "./Widgets/ProducBanner/ProducBanner.jsx";
+import ProducCarrosel from "./Widgets/ProducBannerCarrosel/ProducBannerCarrosel.jsx";
 
 function App() {
   const [produtos, setProdutos] = useState([]);
@@ -14,17 +15,20 @@ function App() {
 
   return (
     <>
-      {produtos.map((produto) => (
-        <ProducBanner
-          key={produto.id}
-          rate={produto.rate}
-          imagem={produto.imagem}
-          nome={produto.nome}
-          precoAntigo={produto.precoAntigo}
-          precoAtual={produto.precoAtual}
-          desconto={produto.desconto}
-        />
-      ))}
+
+      <ProducCarrosel produtos={produtos}/>
+      {/* {produtos.map((produto) => ( */}
+      {/*   <ProducBanner */}
+      {/*     key={produto.id} */}
+      {/*     rate={produto.rate} */}
+      {/*     imagem={produto.imagem} */}
+      {/*     nome={produto.nome} */}
+      {/*     precoAntigo={produto.precoAntigo} */}
+      {/*     precoAtual={produto.precoAtual} */}
+      {/*     desconto={produto.desconto} */}
+      {/*   /> */}
+      {/* ))} */}
+
     </>
   );
 }
