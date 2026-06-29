@@ -5,7 +5,7 @@ import iconeCartCheio from "../../assets/cartCheio.png";
 import iconeHeartVazio from "../../assets/heartVazio.svg";
 import iconeHeartCheio from "../../assets/heartCheio.svg";
 
-function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto}){
+function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto,frete,estoque}){
 
     const [carrinho,setCarrinho] = useState(true);
     const [animarCarrinho,setAnimarCarrinho] = useState(false);
@@ -22,6 +22,8 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto}){
     setAnimarHeart(true);
     setHeart(!heart);
   }
+
+
 
   return(
 
@@ -53,13 +55,18 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto}){
       <div className={styles.imagem}>
             <img className={styles.imagemPrincipal} src={imagem} width={162} height={162}/>
       </div>
+
+      {frete && <p className={styles.frete} >Frete Gratis</p>}
+
       <p className={styles.nome} >{nome}</p>
 
       <p className={styles.preco}>R$ {precoAntigo}</p>
 
       <p className={styles.precoComDesconto}>R$ {precoAtual} <span className={styles.verdinho}>-{desconto}%</span></p>
 
-      <p className={styles.formaDePagamento}>No Pix ou 10x de R$ {(precoAtual / 10).toFixed(2)}</p>  
+      <p className={styles.formaDePagamento}>No Pix ou 10x de R$ {(precoAtual / 10).toFixed(2)}</p>
+
+      {estoque < 15 ? <p className={styles.estoque} >Restam {estoque}</p> : null}
 
     </div>
   
