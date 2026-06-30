@@ -1,0 +1,133 @@
+.headerMain {
+  background: linear-gradient(to right, #0342C3, #FB519F, #f39546);
+ padding: 12px 0 8px 0;
+  color: #ffffff;
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logoLink .logoImg {
+  height: 40px; 
+  /* display: block; */
+}
+
+.locationSection {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 120px;
+}
+
+.pinIcon {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.locationText {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.locationText span {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.locationText strong {
+  text-decoration: underline;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.searchSection {
+  position: relative;
+  flex: 1;
+  max-width: 540px;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  height: 36px;
+  border-radius: 3px;
+  border: none;
+  padding: 0 50px 0 15px;
+  font-size: 13px;
+  outline: none;
+  color: #333333;
+}
+
+.searchInput::placeholder {
+  color: #8c8c8c;
+}
+
+.searchButton {
+  position: absolute;
+  right: 4px;
+  height: 28px;
+  width: 44px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0 18px 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.userIcon {
+  font-size: 28px;
+}
+
+.userText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.userText span {
+  text-decoration: underline;
+}
+
+.userText strong {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.actionIcons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.actionIcons a {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  transition: opacity 0.2s;
+}
+
+.actionIcons a:hover {
+  opacity: 0.8;
+}

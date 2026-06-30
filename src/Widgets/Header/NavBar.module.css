@@ -1,0 +1,190 @@
+.headerNavRow {
+  background: linear-gradient(to right, #0342C3, #FB519F, #f39546);
+ padding: 0 0 12px 0;
+}
+
+.navRowContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.departmentsContainer {
+  position: relative;
+  display: inline-flex;
+}
+
+.departmentsBtn {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 0 12px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.departmentsBtn:hover, .departmentsContainer:hover .departmentsBtn {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-color: #ffffff;
+}
+
+.chevronMain {
+  transition: transform 0.2s;
+  font-size: 12px;
+}
+
+.chevronMain.open {
+  transform: rotate(180deg);
+}
+
+.departmentsDropdownList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 240px;
+  border-radius: 0 0 4px 4px;
+  z-index: 9999;
+  float: left;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.departmentsDropdownList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.departmentsDropdownList::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 3px;
+}
+
+.dropdownItem a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  color: #42464d;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.dropdownItem a:hover {
+  background-color: #f2f3f6;
+  color: #ff6500;
+}
+
+.itemArrow {
+  color: #8c8c8c;
+  font-size: 11px;
+}
+
+.highlightLinks {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.highlightLinks a, .linkSimpleBtn {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 12px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.linkCupom {
+  background-color: rgb(251 81 159);
+  border-radius: 4px;
+  padding-top: .375rem;
+  padding-bottom: .375rem;
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+.linkMaisVendidos {
+  background-color: #1f10c3;
+}
+
+.linkSimple {
+  font-weight: 400 !important;
+  opacity: 0.9;
+}
+
+.linkSimple:hover {
+  opacity: 1;
+  background-color: rgb(0, 100, 255);
+  
+}
+
+.linkSimpleBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  gap: 4px;
+  opacity: 0.9;
+}
+
+/* DROPDOWN DO MAIS */
+.maisContainer {
+  position: relative;
+}
+
+.maisDropdownList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding: 6px 0;
+  margin: 4px 0 0 0;
+  width: 150px;
+  border-radius: 4px;
+  z-index: 9999;
+}
+
+.maisDropdownItem a {
+  display: block;
+  padding: 8px 16px;
+  color: #42464d;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.maisDropdownItem a:hover {
+  background-color: #f2f3f6;
+  color: #ff6500;
+}
+
+.kabumMontePcLink {
+  display: block;
+  text-decoration: none;
+}
+
+.kabumMontePcImg {
+  display: block;
+  height: 34px;
+  width: auto;
+}

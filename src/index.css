@@ -1,8 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
+  font-family: Poppins, sans-serif, Arial; /* Fonte oficial da KaBuM! */
+  background-color: #fafafe;
+  -webkit-font-smoothing: antialiased;
 }
 
-p {
-  margin: 0;
+html {
+  overflow-y: scroll; /* Mantém a barra de scroll sempre visível para evitar pulos no layout */
 }
-
