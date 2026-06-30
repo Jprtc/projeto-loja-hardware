@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styles from './Footer.module.css';
 import logoKabum from '../../assets/kabumlogo.png';
 
-// Importação dos ícones oficiais das redes sociais e lojas de aplicativos
 import { 
   FaFacebookF, 
   FaInstagram, 
@@ -23,7 +22,6 @@ export default function Footer() {
 
   return (
     <footer className={styles.kabumFooter}>
-      {/* 1. Barra de Newsletter (Centralizada) */}
       <section className={styles.newsletterBar}>
         <div className={styles.newsletterContainer}>
           <span className={styles.newsletterTitle}><strong>KaBuM! News</strong> Receba ofertas</span>
@@ -35,12 +33,10 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* 2. Botão Dinâmico Ver Mais / Ver Menos */}
       <div className={styles.verMaisBar} onClick={toggleMenu}>
         <span>{isExpanded ? 'VER MENOS ▴' : 'VER MAIS ▾'}</span>
       </div>
 
-      {/* 3. Seção Expandível (Menu de Categorias Oculto por Padrão) */}
       <section className={`${styles.expandedMenu} ${isExpanded ? styles.showMenu : ''}`}>
         <div className={styles.expandedGrid}>
           <div className={styles.expColumn}><ul><li><a href="#">Regulamentos</a></li><li><a href="#">Cupons</a></li><li><a href="#">Frete Grátis</a></li><li><a href="#">Baixe o App</a></li></ul></div>
@@ -56,7 +52,6 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* 4. Grade de Conteúdo Principal (Atendimento e Institucional) */}
       <section className={styles.footerContent}>
         <div className={styles.contentColumn}>
           <h3>Atendimento</h3>
@@ -107,7 +102,7 @@ export default function Footer() {
               <li><a href="#">Exerça seus Direitos de Privacidade</a></li>
               <li><a href="#">Segurança & Privacidade</a></li>
               <li><a href="#">Canal Confidencial</a></li>
-              <li><a href="#">Garantia Estendida e Roubo + Quebra Acidental</a></li>
+              <li><a href="#">Garantia Estendida e Roubo + Quebra Accidental</a></li>
               <li><a href="#">Relatórios</a></li>
               <li><a href="#">Trabalhe Conosco</a></li>
             </ul>
@@ -121,7 +116,6 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* 5. Barra Centralizada de Redes Sociais e Aplicativos */}
       <section className={styles.socialAndAppsBar}>
         <div className={styles.centeredBarContainer}>
           <div className={styles.socialGroup}>
@@ -150,7 +144,6 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* 6. Rodapé Legal / Logos (Largura Horizontal Total) */}
       <section className={styles.legalBottom}>
         <div className={styles.brandLogos}>
           <img 

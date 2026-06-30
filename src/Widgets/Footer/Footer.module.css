@@ -12,9 +12,6 @@
   box-sizing: border-box;
 }
 
-/* ==========================================================================
-   1. BARRA DE NEWSLETTER (CENTRALIZADA)
-   ========================================================================== */
 .newsletterBar {
   background-color: #002d59;
   display: flex;
@@ -74,9 +71,6 @@
   background-color: #004b8d;
 }
 
-/* ==========================================================================
-   2. VER MAIS / VER MENOS
-   ========================================================================== */
 .verMaisBar {
   text-align: center;
   padding: 12px 0;
@@ -94,9 +88,6 @@
   background-color: #003a6d;
 }
 
-/* ==========================================================================
-   3. SEÇÃO EXPANDÍVEL (MENU DE CATEGORIAS COLOPSÁVEL)
-   ========================================================================== */
 .expandedMenu {
   max-height: 0;
   overflow: hidden;
@@ -143,9 +134,6 @@
   color: #ffffff;
 }
 
-/* ==========================================================================
-   4. GRADE DE CONTEÚDO PRINCIPAL (ATENDIMENTO E INSTITUCIONAL)
-   ========================================================================== */
 .footerContent {
   display: grid;
   grid-template-columns: 1.2fr 1.2fr 1.8fr 3.8fr;
@@ -230,9 +218,6 @@
   text-decoration: underline;
 }
 
-/* ==========================================================================
-   5. BARRA DE REDES SOCIAIS E APLICATIVOS (TOTALMENTE CENTRALIZADA)
-   ========================================================================== */
 .socialAndAppsBar {
   display: flex;
   justify-content: center;
@@ -266,7 +251,7 @@
   font-size: 16px;
   display: flex;
   align-items: center;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .iconsRow a:hover {
@@ -300,13 +285,10 @@
   color: #ff6500;
 }
 
-/* ==========================================================================
-   6. RODAPÉ LEGAL / LOGOS (LARGURA HORIZONTAL COMPLETA)
-   ========================================================================== */
 .legalBottom {
   text-align: center;
   padding: 24px 20px 32px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15); /* Linha divisória fina */
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .brandLogos {
@@ -355,9 +337,6 @@
   color: #ffffff;
 }
 
-/* ==========================================================================
-   7. RESPONSIVIDADE
-   ========================================================================== */
 @media (max-width: 1200px) {
   .footerContent { grid-template-columns: repeat(2, 1fr); }
   .expandedGrid { grid-template-columns: repeat(5, 1fr); }
