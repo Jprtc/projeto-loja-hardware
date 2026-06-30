@@ -1,23 +1,18 @@
 .headerMain {
-  background: linear-gradient(to right, #0342C3, #FB519F, #f39546);
+  /* background: linear-gradient(to right, #0342C3, #FB519F, #f39546); */
  padding: 12px 0 8px 0;
   color: #ffffff;
 }
 
 .mainContent {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  width: 100%; 
+  padding: 0; 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; 
   gap: 30px;
 }
 
-.logoLink .logoImg {
-  height: 40px; 
-  /* display: block; */
-}
 
 .locationSection {
   display: flex;
@@ -131,3 +126,5 @@
 .actionIcons a:hover {
   opacity: 0.8;
 }
+
+

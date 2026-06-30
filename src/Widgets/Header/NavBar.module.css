@@ -1,5 +1,5 @@
 .headerNavRow {
-  background: linear-gradient(to right, #0342C3, #FB519F, #f39546);
+  /* background: linear-gradient(to right, #0342C3, #FB519F, #f39546); */
  padding: 0 0 12px 0;
 }
 
@@ -146,7 +146,6 @@
   opacity: 0.9;
 }
 
-/* DROPDOWN DO MAIS */
 .maisContainer {
   position: relative;
 }
@@ -163,6 +162,16 @@
   width: 150px;
   border-radius: 4px;
   z-index: 9999;
+}
+
+.maisDropdownList::before {
+  content: "";
+  position: absolute;
+  top: -10px; 
+  left: 0;
+  width: 100%;
+  height: 10px; 
+  background-color: transparent;
 }
 
 .maisDropdownItem a {
@@ -188,3 +197,4 @@
   height: 34px;
   width: auto;
 }
+

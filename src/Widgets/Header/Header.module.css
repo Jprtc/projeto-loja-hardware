@@ -5,5 +5,31 @@
   z-index: 999;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
+  background: linear-gradient(to right, #0342C3, #FB519F, #f39546);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 20px;
+  box-sizing: border-box;
 }
+
+.logoLink {
+  display: flex;
+  flex-shrink: 0; 
+  margin-right: 30px; 
+  align-self: center;
+}
+
+.logoImg {
+  width: 150px; 
+  height: auto;
+  display: block;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px; 
+}
+

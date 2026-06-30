@@ -11,14 +11,6 @@ function MainHeader () {
     <div className={styles.headerMain}>
       <div className={styles.mainContent}>
 
-        <a href="/" className={styles.logoLink}>
-          <img 
-            src="https://static.kabum.com.br/conteudo/icons/logo.svg" 
-            alt="KaBuM! Logo" 
-            className={styles.logoImg}
-          />
-        </a>
-
         <div className={styles.locationSection}>
           <FiMapPin className={styles.pinIcon} />
           <div className={styles.locationText}>

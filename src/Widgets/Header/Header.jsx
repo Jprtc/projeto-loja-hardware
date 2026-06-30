@@ -8,9 +8,21 @@ function Header() {
 
   return (
     <header className={styles.headerContainer}>
-        <MainHeader/>
-        <NavBar/>
-    </header>
+ 
+  <a href="/" className={styles.logoLink}>
+    <img 
+      src="https://static.kabum.com.br/conteudo/icons/logo.svg" 
+      alt="KaBuM! Logo" 
+      className={styles.logoImg}
+    />
+  </a>
+
+  
+  <div className={styles.rightContent}>
+    <MainHeader />
+    <NavBar />
+  </div>
+</header>
   )
 }
 
