@@ -55,8 +55,8 @@
 }
 
 .imagem{
-  width:162px;
-  height:162px;
+  width:162px!important;
+  height:162px!important;
   overflow:hidden;
   align-self:center!important;
   padding-top:20px;
