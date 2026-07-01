@@ -1,0 +1,200 @@
+.container{
+  width:260px;
+  height:396px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:auto;
+  
+  border-radius:15px;
+  overflow:hidden;
+  background-color:white;
+  transition: box-shadow 0.3s ease,transform 0.3s ease;
+    &:hover{
+      cursor:pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+}
+
+.icones{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  margin-top:5px;
+  
+
+}
+.rate{
+  margin-right:110px;
+  margin-left:5px;
+}
+
+.heart , .carrinho {
+  border:0px;
+  background-color:white;
+  transition:transform 2s ease;
+
+   &:hover{
+     cursor:pointer;
+   }
+}
+
+.pop{
+  animation: pop 1s ease;
+}
+
+@keyframes pop{
+  0% {
+    transform:scale(0);
+  }
+  100%{
+    transform:scale(1);
+  }
+}
+
+.imagem{
+  width:162px!important;
+  height:162px!important;
+  overflow:hidden;
+  align-self:center!important;
+  padding-top:20px;
+  padding-bottom:35px;
+  
+}
+
+.imagem .imagemPrincipal{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform 0.3s ease;
+}
+
+.container:hover .imagem .imagemPrincipal{
+  transform:scale(1.2);
+  
+}
+
+.nome{
+    
+    font-size:25px;
+    color:black;
+    padding-left:5px;
+    padding-right:5px;
+}
+.preco{
+    font-size:20px;
+    color:#96a0a4;
+    text-decoration:line-through;
+    padding-left:5px;
+    padding-right:5px;
+
+}
+.precoComDesconto{
+  font-size:25px;
+  font-weight:bold;
+  font-weight:700;
+  padding-left:5px;
+  padding-right:5px;
+}
+.formaDePagamento{
+  font-size:20px;
+  padding-left:5px;
+  padding-right:5px;
+}
+.verdinho{
+  padding-left:10px;
+  color:#289d4e;
+  background-color:#eefff2;
+  font-size:20px;
+}
+.frete{
+  padding-left:5px;
+  font-size:20px;
+  color:#088d34;
+  
+}
+.estoque{
+  display:flex;
+  align-self:flex-end;
+  padding-right:10px;
+  padding-bottom:5px;
+  color:#f13e3e;
+  background-color:#fff1f1;
+  font-size:20px;
+}
+
+.rodaDaFortuna{
+  width:50px;
+  height:50px;
+  /* padding-left:10px; se quiser deixar ela bebada */
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:50px;
+  border: 5px solid #ddd;
+  border-top:5px solid #00aaff;
+  border-radius: 50%;
+  animation: rodinhaRodando 0.8s linear infinite;
+}
+
+@keyframes rodinhaRodando {
+    from{
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.pai{
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.popFav{
+  background: #faecea;
+  color:red;
+  padding: 20px 35px;
+  border:1px solid red;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  animation: aparecer 0.2s ease;
+}
+
+.popCart{
+  background: #eefff2;
+  color:green;
+  padding: 20px 35px;
+  border:1px solid green;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  animation: aparecer 0.2s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
