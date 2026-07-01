@@ -4,10 +4,15 @@ import ListaCategorias from "./Widgets/ListaCategorias/ListaCategorias";
 import ListaCards from "./Widgets/ListaCards/ListaCards";
 import Footer from './Widgets/Footer/Footer'
 import Header from './Widgets/Header/header'
-import MainBanner from './Widgets/MainBanner/MainBanner'
+// import MainBanner from './Widgets/MainBanner/MainBanner'
 
 function App() {
   return (
+
+    <>
+    <Header/>
+
+
     <main>
 
       <ListaCards />
@@ -15,6 +20,10 @@ function App() {
       <ListaCategorias />
 
     </main>
+
+    <Footer/>
+
+    </>
   );
 }
 
