@@ -1,18 +1,18 @@
+import "./App.css";
 
-import './App.css'
-import Footer from './Widgets/Footer/Footer'
-import Header from './Widgets/Header/header'
-import MainBanner from './Widgets/MainBanner/MainBanner'
+import ListaCategorias from "./Widgets/ListaCategorias/ListaCategorias";
+import ListaCards from "./Widgets/ListaCards/ListaCards";
 
 function App() {
-
   return (
-    <>
-    <Header/>
-      <MainBanner/>
-    <Footer/>
-    </>
-  )
+    <main>
+
+      <ListaCards />
+
+      <ListaCategorias />
+
+    </main>
+  );
 }
 
-export default App
+export default App;
