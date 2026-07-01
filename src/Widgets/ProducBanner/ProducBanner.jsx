@@ -5,7 +5,7 @@ import iconeCartVazio from "../../assets/cartVazio.png";
 import iconeCartCheio from "../../assets/cartCheio.png";
 import iconeHeartVazio from "../../assets/heartVazio.svg";
 import iconeHeartCheio from "../../assets/heartCheio.svg";
-import icone404 from "../../assets/404.svg";
+import icone404 from "../../assets/404.png";
 
 function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto,frete,estoque})
 
@@ -122,7 +122,7 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto,frete,es
         ) : erroImagem ? (
             <>
           <p>NoPisibroCarregaSabaga</p>
-          <img className={404} src={icone404} width={162} height={160}/>
+          <img className={404} src={icone404} width={172} height={160}/>
             </>
         ) : (
           <img
