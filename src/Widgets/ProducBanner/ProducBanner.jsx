@@ -13,6 +13,26 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto,frete,es
   const [imagemPrincipal, setImagemPrincipal] = useState();
   const [isLoading, setIsLoading] = useState(false);
   const [erroImagem, setErroImagem] = useState(false);
+  const [popup , setPopup] = useState({ popando:false,mensagem:"",tipo:""});
+
+    function mostrarPopup(mensagem,tipo) {
+    setPopup({
+      popando:true,
+      mensagem,
+      tipo,
+
+    });
+
+      setTimeout(() =>{
+      setPopup({
+        popando:false,
+        mensagem:"",
+        tipo:"",
+      });
+
+    },1500 );
+
+  }
 
 
   useEffect(() => {
@@ -28,7 +48,7 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto,frete,es
     const timer = setTimeout(() => {
       setImagemPrincipal(imagem);
       setIsLoading(false);
-    }, 100000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [imagem]);
@@ -54,7 +74,13 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto,frete,es
       <div className={styles.icones}>
         <p className={styles.rate}>⭐ {rate}</p>
 
-        <button onClick={adicionarHeart} className={styles.heart}>
+        <button className={styles.heart}
+        onClick={() => {
+            adicionarHeart,
+            mostrarPopup("❤️ Produto adicionado aos FAV ! ❤️ ","popFav")
+          }}
+        >
+
           <img
             src={heart ? iconeHeartVazio : iconeHeartCheio}
             width={25}
@@ -65,7 +91,20 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto,frete,es
           />
         </button>
 
-        <button onClick={adicionarCarrinho} className={styles.carrinho}>
+        {popup.popando && (
+          <div className={styles.pai}>
+          <div className={popup.tipo === "popFav" ? styles.popFav : styles.popCart}>
+            {popup.mensagem}
+          </div>
+          </div>
+        )}
+
+        <button className={styles.carrinho} 
+        onClick={() =>{
+            adicionarCarrinho,
+            mostrarPopup("🛒 Produto adcionado ao Cart ! 🛒","popCart")
+          }}
+        >
           <img
             src={carrinho ? iconeCartVazio : iconeCartCheio}
             width={25}
