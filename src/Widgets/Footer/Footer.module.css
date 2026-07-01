@@ -1,0 +1,352 @@
+.kabumFooter {
+  background-color: #004b8d;
+  color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.kabumFooter *,
+.kabumFooter *::before,
+.kabumFooter *::after {
+  box-sizing: border-box;
+}
+
+.newsletterBar {
+  background-color: #002d59;
+  display: flex;
+  justify-content: center;
+  padding: 16px 40px;
+}
+
+.newsletterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.newsletterTitle {
+  font-size: 14px;
+}
+
+.newsletterTitle strong {
+  font-weight: 700;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 12px;
+  flex-grow: 1;
+  max-width: 800px;
+}
+
+.newsletterForm input {
+  flex-grow: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #333333;
+  outline: none;
+}
+
+.newsletterForm button {
+  background-color: #0060b6;
+  color: #ffffff;
+  border: none;
+  padding: 12px 36px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+}
+
+.newsletterForm button:hover {
+  background-color: #004b8d;
+}
+
+.verMaisBar {
+  text-align: center;
+  padding: 12px 0;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #00437e;
+  letter-spacing: 1px;
+  user-select: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.verMaisBar:hover {
+  background-color: #003a6d;
+}
+
+.expandedMenu {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #00437e;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  padding: 0 40px;
+}
+
+.showMenu {
+  max-height: 600px; 
+  padding: 30px 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.expandedGrid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.expColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expColumn ul li {
+  margin-bottom: 12px;
+}
+
+.expColumn ul li a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 1.4;
+  display: block;
+  transition: color 0.15s ease;
+}
+
+.expColumn ul li a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1.8fr 3.8fr;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contentColumn h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.contentColumn p {
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.subText {
+  margin-top: 16px !important;
+}
+
+.subText a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.emailText {
+  font-weight: 600;
+}
+
+.storeSpacing {
+  margin-top: 24px !important;
+}
+
+.btnFaleConosco {
+  background-color: #ff6500; 
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: background-color 0.2s ease;
+}
+
+.btnFaleConosco:hover {
+  background-color: #e05900;
+}
+
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.linkColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkColumn ul li {
+  margin-bottom: 12px;
+}
+
+.linkColumn ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 1.4;
+  display: block;
+}
+
+.linkColumn ul li a:hover {
+  text-decoration: underline;
+}
+
+.socialAndAppsBar {
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  background-color: #00437e;
+}
+
+.centeredBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.socialGroup, .appsGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.iconsRow {
+  display: flex;
+  gap: 18px;
+}
+
+.iconsRow a {
+  color: #ffffff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.iconsRow a:hover {
+  color: #ff6500;
+}
+
+.appButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.btnAppApple,
+.btnAppGoogle {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 8px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btnAppApple:hover,
+.btnAppGoogle:hover {
+  border-color: #ff6500;
+  color: #ff6500;
+}
+
+.legalBottom {
+  text-align: center;
+  padding: 24px 20px 32px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.brandLogos {
+  margin-bottom: 16px;
+}
+
+.kabumLogoImg {
+  height: 32px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.brandLogos p {
+  font-size: 12px;
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.magaluBrand {
+  color: #0086ff;
+  font-weight: 700;
+}
+
+.copyrightContainer {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.copyrightText {
+  font-size: 10px;
+  color: #a4b3c6;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+.legalLink {
+  color: #a4b3c6;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.legalLink:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .footerContent { grid-template-columns: repeat(2, 1fr); }
+  .expandedGrid { grid-template-columns: repeat(5, 1fr); }
+}
+@media (max-width: 900px) {
+  .newsletterContainer, .centeredBarContainer { flex-direction: column; align-items: center; }
+  .newsletterForm { width: 100%; }
+}
+@media (max-width: 768px) {
+  .footerContent { grid-template-columns: 1fr; }
+  .linksGrid, .expandedGrid { grid-template-columns: repeat(2, 1fr); }
+  .copyrightText { text-align: center; }
+}
