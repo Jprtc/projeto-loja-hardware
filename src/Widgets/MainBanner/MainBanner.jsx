@@ -26,7 +26,7 @@ const banners = [
   {
     image: banner0,
     link: "https://www.kabum.com.br/ofertas/julhogamer",
-    fullWidth: true,
+    // fullWidth: true,
     className: "special-fullwidth-slide"
   },
   {
@@ -87,9 +87,9 @@ function Carousel() {
         }}
         className="mySwiper"
       >
-        {banners.map((banner) => (
+        {banners.map((banner, index) => (
           <SwiperSlide 
-          key={banner.id}
+          key={index}
           className={banner.fullWidth ? 'special-fullwidth-slide' : ''}
             >
             <a href={banner.link}>
