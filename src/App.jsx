@@ -4,7 +4,7 @@ import ListaCategorias from "./Widgets/ListaCategorias/ListaCategorias";
 import ListaCards from "./Widgets/ListaCards/ListaCards";
 import Footer from './Widgets/Footer/Footer'
 import Header from './Widgets/Header/header'
-// import MainBanner from './Widgets/MainBanner/MainBanner'
+import MainBanner from './Widgets/MainBanner/MainBanner'
 import ProducBanner from "./Widgets/ProducBanner/ProducBanner.jsx";
 import ProducCarrosel from "./Widgets/ProducBannerCarrosel/ProducBannerCarrosel.jsx";
 
@@ -25,6 +25,7 @@ function App() {
     <>
     <Header/>
 
+    <MainBanner />
 
     <main>
 
