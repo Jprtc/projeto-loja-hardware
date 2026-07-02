@@ -76,8 +76,8 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto,frete,es
 
         <button className={styles.heart}
         onClick={() => {
-            adicionarHeart,
-            mostrarPopup("❤️ Produto adicionado aos FAV ! ❤️ ","popFav")
+            adicionarHeart();
+            mostrarPopup("❤️ Produto adicionado aos FAV ! ❤️ ","popFav");
           }}
         >
 
@@ -101,8 +101,8 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto,frete,es
 
         <button className={styles.carrinho} 
         onClick={() =>{
-            adicionarCarrinho,
-            mostrarPopup("🛒 Produto adcionado ao Cart ! 🛒","popCart")
+            adicionarCarrinho();
+            mostrarPopup("🛒 Produto adcionado ao Cart ! 🛒","popCart");
           }}
         >
           <img
