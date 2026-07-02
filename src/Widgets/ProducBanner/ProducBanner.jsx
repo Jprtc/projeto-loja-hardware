@@ -48,7 +48,7 @@ function ProducBanner({rate,imagem,nome,precoAntigo,precoAtual,desconto,frete,es
     const timer = setTimeout(() => {
       setImagemPrincipal(imagem);
       setIsLoading(false);
-    }, 5000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [imagem]);
