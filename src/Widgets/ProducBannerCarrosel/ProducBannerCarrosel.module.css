@@ -67,8 +67,6 @@
 .fogo{
   display:flex;
   align-self:center;
-  padding-left:10px;
-  padding-right:20px;
 }
 .titulo{
   display:flex;
